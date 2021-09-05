@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<form>
+    <fields addfieldpath="/administrator/components/com_fabrik/models/fields" name="params">
+        <fieldset label="COM_FABRIK_OPTIONS" name="plg-list-drag_and_drop_file">
+
+            <field name="dadf_arquivo"
+                   label="PLG_FABRIK_LIST_DRAG_AND_DROP_FILE_ARQUIVO_LABEL"
+                   description="PLG_FABRIK_LIST_DRAG_AND_DROP_FILE_ARQUIVO_DESC"
+                   type="listfields"
+            />
+
+            <field name="required_fields"
+                   type="fabrikmodalrepeat"
+                   repeat="true"
+                   description="PLG_FABRIK_LIST_DRAG_AND_DROP_FILE_REQUIRED_FIELDS_DESC"
+                   label="PLG_FABRIK_LIST_DRAG_AND_DROP_FILE_REQUIRED_FIELDS_LABEL">
+                <fields name="params">
+                    <fieldset modal="true" name="required_fields_modal" repeat="true">
+                        <field name="dadf_field"
+                               type="listfields"
+                               repeat="true"
+                               label="PLG_FABRIK_LIST_DRAG_AND_DROP_FILE_FIELD_LABEL"
+                        />
+                        <field name="dadf_value"
+                               type="text"
+                               size="40"
+                               repeat="true"
+                               label="PLG_FABRIK_LIST_DRAG_AND_DROP_FILE_VALUE_LABEL"
+                        />
+                    </fieldset>
+                </fields>
+            </field>
+
+        </fieldset>
+    </fields>
+</form>
