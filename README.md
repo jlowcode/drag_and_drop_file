@@ -24,7 +24,7 @@ Com o plugin devidamente instalado no Joomla, há algumas configurações a sere
 Em Fileupload Element, selecione o elemento Fabrik do tipo fileupload ao qual o arquivo arrastado à lista será anexado.
 
 <img src="./.github/02.png" alt="Element" width=300/><br>
-Em Required elements, selecione os elementos que devem ser inicializados para que o registro seja exibido.
+Em Required elements, selecione os elementos que devem ser inicializados para que o registro seja exibido.<br><br>
 <img src="./.github/03.png" alt="Element" width=500/><br>
 
 ## 💻 Uso
