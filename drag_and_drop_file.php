@@ -47,14 +47,16 @@ class PlgFabrik_ListDrag_and_drop_file extends PlgFabrik_List
         $itemId = $input->get('Itemid');
         $formId = $this->getModel()->getFormModel()->getId();
 
-        $baseUrl = $app->getDocument()->base;
+        /*$baseUrl = $app->getDocument()->base;
         if ($baseUrl) {
             $baseUrl .= "/form/{$formId}/";
         }
         else {
             $baseUrl = COM_FABRIK_LIVESITE . "index.php?Itemid={$itemId}&option=com_fabrik&view=form&formid={$formId}&rowid=";
-        }
+        }*/
 
+        //Modification to adapte for all moments, including form not vinculated to menu and different links
+        $baseUrl = COM_FABRIK_LIVESITE . "index.php?Itemid={$itemId}&option=com_fabrik&view=form&formid={$formId}&rowid=";
 
         $opts             = $this->getElementJSOptions();
         $opts->elModel = $elModel;
